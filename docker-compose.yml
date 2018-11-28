@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+
+  iotex-core:
+    image: iotex/iotex-core:testnet 
+    volumes:
+      - ./config.yaml:/etc/iotex/config_local_fullnode.yaml:ro
+      - ./db:/go/src/github.com/iotexproject/iotex-core/db:rw
+    ports:
+      - "30555:30555"
+      - "30333:30333"
+      - "6060:6060"
+      - "8080:8080"
