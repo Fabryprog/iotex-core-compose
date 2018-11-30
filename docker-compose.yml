@@ -9,6 +9,6 @@ services:
       - ./db:/go/src/github.com/iotexproject/iotex-core/db:rw
     ports:
       - "30555:30555"
-      - "30333:30333"
       - "6060:6060"
       - "8080:8080"
+      - "14004:14004"
