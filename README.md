@@ -4,7 +4,7 @@ Docker compose to create a IoTeX node (testnet)
 
 # Config file
 
-you must change using yoir public ip
+you must change using your public ip
 
 
 ```
@@ -41,10 +41,24 @@ explorer:
 
 ```
 
-# Test
+# Start your node
+
+```
+docker-compose up -d
+```
+
+# Test your node
+
+## Request
 
 ```
 
 curl -X POST --data '{"jsonrpc":"2.0","method":"Explorer.getBlockchainHeight","params":[],"id":"1"}' 127.0.0.1:14004 
 
+```
+
+## Response
+
+```
+{"jsonrpc":"2.0","id":"1","result":231746}
 ```
