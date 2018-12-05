@@ -31,4 +31,4 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"Explorer.getBlockchainHeight","p
 ```
 # Explorer
 
-You can open the explorer using this url: http://<YOUR IP>:4004/
+You can open the explorer using this url: http://YOUR IP ADDRESS:4004/
