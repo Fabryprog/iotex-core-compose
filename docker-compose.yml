@@ -12,3 +12,10 @@ services:
       - "6060:6060"
       - "8080:8080"
       - "14004:14004"
+  iotex-explorer:
+    image: fabryprog/iotex-explorer
+    ports:
+      - "4004:4004"
+    environment:
+      - IOTEX_CORE_URL=http://iotex-core:14004/
+
