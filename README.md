@@ -5,6 +5,7 @@ Docker compose to create a IoTeX node (testnet)
 The compose has:
 1. iotex-core image
 2. iotex-explorer image
+3. iotex-wallet image
 
 # Config file
 

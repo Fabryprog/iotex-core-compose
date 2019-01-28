@@ -11,11 +11,14 @@ services:
       - "30555:30555"
       - "6060:6060"
       - "8080:8080"
-      - "14004:14004"
+  
+  iotex-wallet:
+    image: fabryprog/iotex-wallet:testnet
+
   iotex-explorer:
     image: fabryprog/iotex-explorer
     ports:
       - "4004:4004"
     environment:
       - IOTEX_CORE_URL=http://iotex-core:14004/
-
+      - IOTEX_WALLET_URL=iotex-wallet:42124
