@@ -11,8 +11,6 @@ The compose has:
 
 copy the file ```config.template.yml``` into ```config.yml``` and edit it. You must change using yoir public ip
 
-```
-
 # Start your node
 
 ```
@@ -24,9 +22,7 @@ docker-compose up -d
 ## Request
 
 ```
-
 curl -X POST --data '{"jsonrpc":"2.0","method":"Explorer.getBlockchainHeight","params":[],"id":"1"}' 127.0.0.1:14004 
-
 ```
 
 ## Response
@@ -34,3 +30,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"Explorer.getBlockchainHeight","p
 ```
 {"jsonrpc":"2.0","id":"1","result":231746}
 ```
+# Explorer
+
+You can open the explorer using this url: http://YOUR IP ADDRESS:4004/
